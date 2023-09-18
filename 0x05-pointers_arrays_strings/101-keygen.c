@@ -34,5 +34,3 @@ int main(void)
 	return (0);
 }
 
- 18 changes: 18 additions & 0 deletions18  
-0x05-pointers_arrays_strings-2/2-main.c
