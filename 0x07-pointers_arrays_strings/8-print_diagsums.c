@@ -1,11 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * set_string - sets the value of a pointer to a char
- * @s: pointer to pointer we need to set to
- * @to: string to set
+ * print_diagsums -  prints sums
+ * @a: a pointer
+ * @size: size
  */
-void set_string(char **s, char *to)
+void print_diagsums(int *a, int size)
 {
-	*s = to;
+	int i, sum1 = 0, sum2 = 0;
+
+	for (i = 0; i < size; i++)
+	{
+		sum1 += *(a + (size * i + i));
+		sum2 += *(a + (size * i + size - 1 - i));
+	}
+	printf("%d, ", sum1);
+	printf("%d\n", sum2);
 }
