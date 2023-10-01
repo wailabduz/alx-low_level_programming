@@ -1,18 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
-void _puts_recursion(char *s) {
-    if (*s == '\0') { // Base case: end of string
-        putchar('\n'); // Print a newline character
-        return;
-    }
-    
-    putchar(*s); // Print the current character
-    _puts_recursion(s + 1); // Recursive call with the next character
+/**
+ * _puts_recursion - prints a string, followed by a new line
+ * @s: string to print
+ */
+void _puts_recursion(char *s)
+{
+	if (!*s)
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
-
-int main() {
-    char myString[] = "Hello, Recursion!";
-    _puts_recursion(myString);
-    return 0;
-}
-
