@@ -1,1 +1,1 @@
-readme
+#c structures and typedef
