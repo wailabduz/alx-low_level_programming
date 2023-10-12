@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * sum_them_all - function that summ parameters
+ * @n: number of arguments
+ * Return: 0 if fail, sum if succeed
+ */
 int sum_them_all(const unsigned int n, ...) {
     if (n == 0) {
         return 0;
