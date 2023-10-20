@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void pre_main(void);
+
 /**
  * pre_main - function to execute before main
  * __attribute__((constructor)) will make this function run before main
